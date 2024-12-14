@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login with GitHub</title>
+    <style>
+        /* General Reset */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          font-family: Arial, Helvetica, sans-serif;
+          background: linear-gradient(135deg, #24292e, #444c56);
+          color: white;
+        }
+
+        /* Main Login Container */
+        .login-container {
+          text-align: center;
+          background: #33363c;
+          padding: 30px 50px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          max-width: 350px;
+          width: 100%;
+        }
+
+        /* Heading Styling */
+        .login-container h1 {
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+
+        /* Paragraph Styling */
+        .login-container p {
+          font-size: 16px;
+          margin-bottom: 20px;
+          color: #b0b0b0;
+        }
+
+        /* GitHub Login Button */
+        .github-login-btn {
+          background: #333;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 4px;
+          transition: background 0.2s ease-in-out;
+        }
+
+        .github-login-btn:hover {
+          background: #24292e;
+        }
+    </style>
+</head>
+
+<body>
+<div class="login-container">
+    <h1>Welcome</h1>
+    <p>Sign in using your GitHub account</p>
+    <a href="/oauth2/authorization/github">
+        <button class="github-login-btn">Login with GitHub</button>
+    </a>
+</div>
+</body>
+
+</html>
