@@ -83,3 +83,12 @@ String emailContent = "<!DOCTYPE html>\n" +
 			"    </div>\n" +
 			"</body>\n" +
 			"</html>\n";
+
+
+MimeMessage mimeMessage = javaMailSender.createMimeMessage();
+
+		MimeMessageHelper mail = new MimeMessageHelper(mimeMessage,true);
+		mail.setTo("robingautam1408@gmail.com");
+		mail.setFrom("walletgfg@gmail.com");
+		mail.setSubject("Test Spring Boot Mail");
+		mail.setText(emailContent,true);
